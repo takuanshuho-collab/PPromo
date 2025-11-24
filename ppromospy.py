@@ -32,9 +32,8 @@ else:
 # Coloque aqui os usernames ou IDs dos canais que quer monitorar
 CANAIS_ALVO = [
     'me',  # Mensagens Salvas (Sempre bom manter para testes)
-    # 'atacadao_ofertas', 
-    # 'supermercado_bairro',
-]
+    'joirg123', #Superbom
+    ]
 
 print(f"🕵️‍♂️ Espião Iniciado! Monitorando: {CANAIS_ALVO}")
 
