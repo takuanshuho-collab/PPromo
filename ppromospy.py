@@ -5,6 +5,7 @@ from telethon.sessions import StringSession
 from dotenv import load_dotenv
 import google.generativeai as genai
 from PIL import Image
+from keep_alive import keep_alive
 
 # 1. Configuração
 load_dotenv()
@@ -75,9 +76,11 @@ async def handler(event):
             print(f"❌ Erro: {e}")
 
 async def main():
+    print ("🌍 Iniciando servidor web falso para o Render...")
+    keep_alive()
     # Inicia a conexão (usa a string ou o arquivo automaticamente)
     await client.start()
-    print("✅ Sistema Operante. Pressione Ctrl+C para parar.")
+    print("✅ Sistema Operante na Nuvem.")
     await client.run_until_disconnected()
 
 if __name__ == '__main__':
